@@ -21,4 +21,7 @@ The R script (see contest.R in this repo) obtains metrics from the project submi
 The script adds the measures obtained from sonarqube and the derived metrics calculated from that measures to a data file and call the leaderboard tool (tablon) with this file in pipeline. The script named submit2leaderboard.sh communicate with tablon during the contests.
 This means at the end of the contest we have in tablon two different leaderboards, the one obtained during the contest and the final, manually checked by the instructors. We close the first leaderboard, remove the webhook and open the other (See submit2checkedleaderboard.sh in this repo) to submit the sonarqube analysis just of the teams that instructors checked.
 
-This repo contains the basic of the Flask service and the R script.
+This repo contains the basic of the Flask service and the R script, the shell scripts that submit data to leaderboards.
+
+This image represents the contest environment and phases:
+https://github.com/yania/jenui2024/blob/main/ContestEnvironment_v3.png
