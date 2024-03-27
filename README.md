@@ -1,5 +1,8 @@
 # Technical Debt Contest implementation
 
+This image represents the contest environment and phases:
+https://github.com/yania/jenui2024/blob/main/ContestEnvironment_v3.png
+
 Configure a webhook at your sonarqube server (admin user is necessary). 
 Add the new webhook at menu Administration > Configuration > Webhooks or directly at:
 https://your.sonarqube.url/admin/webhooks # our sonarqube server is installed on inf.uva.es premises and configured to identify all students as users 
@@ -22,6 +25,3 @@ The script adds the measures obtained from sonarqube and the derived metrics cal
 This means at the end of the contest we have in tablon two different leaderboards, the one obtained during the contest and the final, manually checked by the instructors. We close the first leaderboard, remove the webhook and open the other (See submit2checkedleaderboard.sh in this repo) to submit the sonarqube analysis just of the teams that instructors checked.
 
 This repo contains the basic of the Flask service and the R script, the shell scripts that submit data to leaderboards.
-
-This image represents the contest environment and phases:
-https://github.com/yania/jenui2024/blob/main/ContestEnvironment_v3.png
